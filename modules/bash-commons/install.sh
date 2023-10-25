@@ -29,7 +29,7 @@ function print_usage {
   echo
   echo "Example:"
   echo
-  echo "  gruntwork-install --repo https://github.com/gruntwork-io/bash-commons --module-name bash-commons --tag v0.0.1 --module-param dir=/opt/gruntwork/bash-commons"
+  echo "  gruntwork-install --repo https://github.com/terraform-modules-krish/bash-commons --module-name bash-commons --tag v0.0.1 --module-param dir=/opt/gruntwork/bash-commons"
 }
 
 function install {
