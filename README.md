@@ -1,3 +1,22 @@
+***WARNING: THIS REPO IS AN AUTO-GENERATED COPY.*** *This repo has been copied from [Gruntwork’s](https://gruntwork.io/) GitHub repositories so that you can consume it from your company’s own internal Git repositories. This copy is automatically created and updated by the `repo-copier` CLI tool. If you need to make changes to this repo, you should make the changes in a separate fork, and NOT make changes directly in this repo, as otherwise, the `repo-copier` will overwrite your changes! Please see the `repo-copier` [documentation](https://github.com/terraform-modules-krish/repo-copier) for more information on how the code is copied, how cross-references are updated, how the changelog is handled, etc.*
+
+***
+
+_You may find it valuable to view the following resources in the original repo. If these links give you a 404, visit https://app.gruntwork.io to gain access or email support@gruntwork.io if you need assistance._
+
+[Home Page](https://github.com/gruntwork-io/bash-commons/) |
+[Pull Requests](https://github.com/gruntwork-io/bash-commons/pulls) |
+[Issues](https://github.com/gruntwork-io/bash-commons/issues) |
+[Releases and Assets](https://github.com/gruntwork-io/bash-commons/releases)
+
+_Alternatively, you can view a copied version of the resources listed above._
+
+[Pull Requests](https://github.com/terraform-modules-krish/bash-commons/blob/master/.github/PULL_REQUESTS.md) |
+[Issues](https://github.com/terraform-modules-krish/bash-commons/blob/master/.github/ISSUES.md) |
+[ChangeLog](https://github.com/terraform-modules-krish/bash-commons/blob/master/.github/CHANGELOG.md)
+
+***
+
 # Bash Commons
 
 This repo contains a collection of reusable Bash functions for handling common tasks such as logging, assertions,
@@ -36,13 +55,13 @@ fi
 
 The first step is to download the code onto your computer.
 
-The easiest way to do this is with the [Gruntwork Installer](https://github.com/gruntwork-io/gruntwork-installer)
+The easiest way to do this is with the [Gruntwork Installer](https://github.com/terraform-modules-krish/gruntwork-installer)
 (note, you'll need to replace `<VERSION>` below with a version number from the [releases
 page](https://github.com/gruntwork-io/bash-commons/releases)):
 
 ```bash
 gruntwork-install \
-  --repo https://github.com/gruntwork-io/bash-commons \
+  --repo https://github.com/terraform-modules-krish/bash-commons \
   --module-name bash-commons \
   --tag <VERSION>
 ```
@@ -52,7 +71,7 @@ override the owner of the install dir using the `owner` and `group` params:
 
 ```bash
 gruntwork-install \
-  --repo https://github.com/gruntwork-io/bash-commons \
+  --repo https://github.com/terraform-modules-krish/bash-commons \
   --module-name bash-commons \
   --tag <VERSION> \
   --module-param dir=/foo/bar \
@@ -64,7 +83,7 @@ If you don't want to use the Gruntwork Installer, you can use `git clone` to get
 copy it to it's final destination manually:
 
 ```bash
-git clone --branch <VERSION> https://github.com/gruntwork-io/bash-commons.git
+git clone --branch <VERSION> https://github.com/terraform-modules-krish/bash-commons.git
 
 sudo mkdir -p /opt/gruntwork
 cp -r bash-commons/modules/bash-commons/src /opt/gruntwork/bash-commons
@@ -187,7 +206,7 @@ instead of `logging.sh` and `string.sh` instead of `strings.sh`.
 
 Every function should be tested:
 
-* Automated tests are in the [test](/test) folder.
+* Automated tests are in the [test](https://github.com/terraform-modules-krish/bash-commons/blob/v0.0.2/test) folder.
 
 * We use [Bats](https://github.com/sstephenson/bats) as our unit test framework for Bash code. Note: Bats has not been
   maintained the last couple years, so we may need to change to the [bats-core](https://github.com/bats-core/bats-core)
@@ -205,7 +224,7 @@ Every function should be tested:
 
 * To leave the Docker container running so you can debug, explore, and interactively run bats: `docker-compose run tests bash`.
 
-* If you ever need to build a new Docker image, the `Dockerfile` is in the [.circleci folder](/.circleci):
+* If you ever need to build a new Docker image, the `Dockerfile` is in the [.circleci folder](https://github.com/terraform-modules-krish/bash-commons/blob/v0.0.2/.circleci):
 
     ```bash
     cd .circleci
